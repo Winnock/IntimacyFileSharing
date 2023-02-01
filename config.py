@@ -32,11 +32,11 @@ DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://nakflixtv:alpha3720@clust
 DB_NAME = os.environ.get("DATABASE_NAME", "cluster00")
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001892458448"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001892458448", "-1001594724293"))
 
-#force sub channel id, if you want enable force sub
 
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001594724293"))
+
+
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
