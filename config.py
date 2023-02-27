@@ -28,8 +28,8 @@ OWNER_ID = int(os.environ.get("OWNER_ID", "1458235021"))
 PORT = os.environ.get("PORT", "8080")
 
 #Database 
-DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://nakflixtv:alpha3720@cluster00.09dhvl5.mongodb.net/?retryWrites=true&w=majority")
-DB_NAME = os.environ.get("DATABASE_NAME", "cluster00")
+DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://nakfilesharing1bot:alpha3720@nakflixsharing1.4piuydi.mongodb.net/?retryWrites=true&w=majority")
+DB_NAME = os.environ.get("DATABASE_NAME", "nakflixsharing1")
 
 #force sub channel id, if you want enable force sub
 FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001892458448"))
@@ -50,7 +50,7 @@ except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
 
 #Force sub message 
-FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "Hello {first}\n\n<b>You need to join @NAKFLIXTV 🕊 to use me\n\nKindly Please join Channel</b>")
+FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "Hello {first}\n\n<b>You need to join my channel first to use me 👇CLICK HERE 👇 \n\nKindly Please join Channel</b>")
 
 #set your Custom Caption here, Keep None for Disable Custom Caption
 CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", "POWERED BY @NAKFLIXTV")
