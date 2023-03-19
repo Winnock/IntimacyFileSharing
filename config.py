@@ -10,7 +10,7 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "5635565892:AAHrl0RLxcDCBes8Yqz_b6-KMhbRKkgxZ7k")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "5635565892:AAFYrOv3YoEcQDqroDlYPq7DSpHerNRCwec")
 
 #Your API ID from my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", "14298205"))
@@ -41,7 +41,11 @@ FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001892458448"))
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 #start message
-START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nI can store private files in Specified Channel and other users can access it from special link.")
+START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\n⚠MAIN CHANNEL⚠
+
+JOIN 👉 T.ME/+Bja2Vqir-mRmMDQ8\n\n🚸REQUESTS GROUP🚸 
+
+JOIN 👉 T.ME/+g1ko6HqxvCBkY2Y8")
 try:
     ADMINS=[]
     for x in (os.environ.get("ADMINS", "1458235021").split()):
@@ -53,7 +57,9 @@ except ValueError:
 FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "Hello {first}\n\n<b>You need to join my channel first to use me 👇CLICK HERE 👇 \n\nKindly Please join Channel</b>")
 
 #set your Custom Caption here, Keep None for Disable Custom Caption
-CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", "POWERED BY @NAKFLIXTV")
+CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", "⚜JOIN 👉 T.ME/+Bja2Vqir-mRmMDQ8
+
+")
 
 #set True if you want to prevent users from forwarding files from bot
 PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "False") == "True" else False
